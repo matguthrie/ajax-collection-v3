@@ -1,0 +1,46 @@
+{
+  "name": "@process-creative/ajax-collection-v3",
+  "version": "3.12.6",
+  "description": "Ajax Collection for asynchronously fetching, printing, filtering, faceting, caching, sorting and paginating products and variants on a Shopify collection template.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dommasters@bitbucket.org/procescreative/ajax-collection-v3.git"
+  },
+  "keywords": [
+    "ajax",
+    "collection",
+    "shopify",
+    "template",
+    "fetch",
+    "filter",
+    "facet",
+    "sort",
+    "paginate",
+    "product",
+    "products",
+    "variant",
+    "variants"
+  ],
+  "author": "Process Creative, Dominic Masters",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/procescreative/ajax-collection-v3#readme",
+  "dependencies": {
+    "@process-creative/pc-slate-tools": "file:./../pc-slate-tools",
+    "core-js": "^3.2.1",
+    "jquery": "^3.3.1",
+    "ts-polyfill": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@types/jquery": "^3.3.29",
+    "@types/node": "^14.0.19",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  }
+}

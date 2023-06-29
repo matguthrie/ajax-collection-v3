@@ -1,0 +1,28 @@
+"use strict";
+exports.__esModule = true;
+exports.MISSING_FACET_TITLE = exports.MISSING_FACET_CONTAINER = exports.MISSING_FACET_FILTER = exports.MISSING_FACET_TEMPLATE = exports.MISSING_FILTER_TEMPLATE = exports.MISSING_FILTER_HANDLE = exports.FETCH_FAILED = exports.DISPLAY_MODE_INVALID = exports.CACHE_DATE_FAILED = exports.CACHE_DATE_FUTURE = exports.CACHE_CLEAR_FAILED = exports.CACHE_SAVE_FAILED = exports.CACHE_LOAD_FAILED = exports.CACHE_NOT_ARRAY = exports.MISSING_ALL_TAGS_DATA = exports.MISSING_PAGE_DATA = exports.MISSING_PRODUCT_DATA = exports.MISSING_JSON_CONTAINER = exports.MISSING_PRODUCT_CONTAINER = exports.MISSING_COLLECTION_PAGE_COUNT = exports.MISSING_COLLECTION_HANDLE = exports.CONTAINER_INITIALZED = exports.CONTAINER_INVALID = void 0;
+var Consts = require("./../constant/Constants");
+exports.CONTAINER_INVALID = 'Container for AjaxCollection is not a valid jQuery object, likely incorrect selector or does not exist on page.';
+exports.CONTAINER_INITIALZED = 'Container for AjaxCollection has already been initialized, cannot attempt to create two ajax collections on one container at this stage.';
+exports.MISSING_COLLECTION_HANDLE = "AjaxCollection Container is missing " + Consts.COLLECTION_HANDLE_ATTR + " attribute with collection handle.";
+exports.MISSING_COLLECTION_PAGE_COUNT = "AjaxCollection Container is missing " + Consts.COLLECTION_HANDLE_PER_PAGE + " attribute with count of items per-page. This must also match the collection.json.liquid template count and the collection.template count.";
+exports.MISSING_PRODUCT_CONTAINER = "Could not find the products container, make sure you have one setup with the " + Consts.PRODUCTS_CONTAINER_SELECTOR + " attribute.";
+exports.MISSING_JSON_CONTAINER = "Could not find the collection JSON information, make sure you have included it with the " + Consts.JSON_CONTAINER_SELECTOR + " attribute.";
+exports.MISSING_PRODUCT_DATA = "Invalid Collection JSON (Missing Products)";
+exports.MISSING_PAGE_DATA = "Invalid Collection JSON (Missing Page)";
+exports.MISSING_ALL_TAGS_DATA = "Invalid Collection JSON (Missing all_tags)";
+exports.CACHE_NOT_ARRAY = 'Invalid Product Cache (Not an array?)';
+exports.CACHE_LOAD_FAILED = 'Failed to load data from product cache';
+exports.CACHE_SAVE_FAILED = 'Failed to save data to the product cache';
+exports.CACHE_CLEAR_FAILED = 'Failed to clear the product cache!';
+exports.CACHE_DATE_FUTURE = 'Invalid Product Cache (Stored data from the future?)';
+exports.CACHE_DATE_FAILED = 'Failed to read product cache date';
+exports.DISPLAY_MODE_INVALID = 'You are trying to use an invalid display mode, AjaxCollection will default to First Available Variant.';
+exports.FETCH_FAILED = 'Failed to fetch and load products, see below error for details';
+exports.MISSING_FILTER_HANDLE = 'You must provide a valid handle for your filter.';
+exports.MISSING_FILTER_TEMPLATE = 'You must provide the AjaxCollectionTemplate for your filter.';
+exports.MISSING_FACET_TEMPLATE = 'You must provide the AjaxCollectionTemplate for your facet.';
+exports.MISSING_FACET_FILTER = 'You must provide the filter for your facet to control.';
+exports.MISSING_FACET_CONTAINER = 'You must provide the jQuery container for your facet.';
+exports.MISSING_FACET_TITLE = 'Please provide a human readable title for your facet.';
+//# sourceMappingURL=Errors.js.map
